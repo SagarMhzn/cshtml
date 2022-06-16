@@ -23,9 +23,22 @@ namespace MVC_assignment.Controllers
             };
             return View(s1);
         }
-        
-        
-        
+
+        public ActionResult template()
+        {
+            student s2 = new student()
+            {
+                Id = 102,
+                Name = "bishal",
+                Age = 07,
+                Address = "manamaiju",
+                isPass = true,
+            };
+
+            
+            return View(s2);
+        }
+
         public ActionResult displayHome()
         {
             return View();
